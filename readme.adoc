@@ -29,5 +29,5 @@ link:attribution.adoc[attribution.adoc].
 adium is licensed under the gnu general public license, version 2 or any later
 version. donkey is licensed under *gpl version 3 or later*. see link:license[license].
 
-imported files keep their original per-file license headers. those headers are
+imported files keep their original per file license headers. those headers are
 authoritative.
