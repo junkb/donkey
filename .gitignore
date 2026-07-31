@@ -1,0 +1,7 @@
+# xcode build output and per-user project state
+build/
+xcuserdata/
+
+# swift package manager
+.build/
+.swiftpm/

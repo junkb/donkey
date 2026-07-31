@@ -1,0 +1,33 @@
+= donkey
+
+an xmpp client for macos, built in honor of https://adium.im/[adium].
+
+== status
+
+pre alpha. nothing works yet.
+
+== what this is
+
+adium was, and arguably still is, the best chat client macos ever had. it has been
+unmaintained for years: it crashes on current macos, and and binaries are
+x86_64, so it won't run when rosetta is removed.
+
+donkey is an attempt to carry forward what made adium good — its architecture, its
+message styles, the feel of using it — as something narrower and current:
+
+* xmpp only
+* arm64 native
+* modern apple frameworks
+
+== lineage and licensing
+
+donkey is a derivative work of adium and could not exist without it. adium's
+contributors are credited in link:contributors.adoc[contributors.adoc]; the
+relationship and its obligations are set out in
+link:attribution.adoc[attribution.adoc].
+
+adium is licensed under the gnu general public license, version 2 or any later
+version. donkey is licensed under *gpl version 3 or later*. see link:license[license].
+
+imported files keep their original per-file license headers. those headers are
+authoritative.
