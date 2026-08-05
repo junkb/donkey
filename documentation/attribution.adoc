@@ -12,7 +12,7 @@ adium is copyright 2001–2013 by the people listed in
 link:contributors.adoc[contributors.adoc], and is licensed under the gnu general
 public license, version 2 or, at the licensee's option, any later version. donkey
 exercises that option and is licensed under version 3 or later; see
-link:license[license].
+link:../license[license].
 
 where donkey incorporates or adapts adium source code, that code remains the
 copyright of its authors. imported files retain their original per file license
