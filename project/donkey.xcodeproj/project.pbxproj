@@ -1,0 +1,269 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 77;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		aa0000000000000000000012 /* Martin in frameworks */ = {isa = PBXBuildFile; productRef = aa0000000000000000000011 /* Martin */; };
+		aa0000000000000000000016 /* DonkeyCore in frameworks */ = {isa = PBXBuildFile; productRef = aa0000000000000000000015 /* DonkeyCore */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		aa0000000000000000000004 /* donkey.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = donkey.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		aa0000000000000000000017 /* common.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; name = common.xcconfig; path = ../build/xcode_settings/common.xcconfig; sourceTree = "<group>"; };
+		aa0000000000000000000018 /* debug.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; name = debug.xcconfig; path = ../build/xcode_settings/configuration/debug.xcconfig; sourceTree = "<group>"; };
+		aa0000000000000000000019 /* release.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; name = release.xcconfig; path = ../build/xcode_settings/configuration/release.xcconfig; sourceTree = "<group>"; };
+		aa000000000000000000001a /* donkey.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; name = donkey.xcconfig; path = ../build/xcode_settings/target/donkey.xcconfig; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFileSystemSynchronizedRootGroup section */
+		aa000000000000000000000f /* base */ = {isa = PBXFileSystemSynchronizedRootGroup; exceptions = (aa0000000000000000000013 /* exceptions for "base" folder in "donkey" target */, ); explicitFileTypes = {}; explicitFolders = (); path = ../source/base; sourceTree = "<group>"; };
+/* End PBXFileSystemSynchronizedRootGroup section */
+
+/* Begin PBXFileSystemSynchronizedBuildFileExceptionSet section */
+		aa0000000000000000000013 /* exceptions for "base" folder in "donkey" target */ = {
+			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
+			membershipExceptions = (
+				Info.plist,
+			);
+			target = aa0000000000000000000005 /* donkey */;
+		};
+/* End PBXFileSystemSynchronizedBuildFileExceptionSet section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		aa0000000000000000000007 /* frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				aa0000000000000000000012 /* Martin in frameworks */,
+				aa0000000000000000000016 /* DonkeyCore in frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		aa0000000000000000000002 = {
+			isa = PBXGroup;
+			children = (
+				aa000000000000000000000f /* base */,
+				aa000000000000000000001b /* build */,
+				aa0000000000000000000003 /* products */,
+			);
+			sourceTree = "<group>";
+		};
+		aa0000000000000000000003 /* products */ = {
+			isa = PBXGroup;
+			children = (
+				aa0000000000000000000004 /* donkey.app */,
+			);
+			name = products;
+			sourceTree = "<group>";
+		};
+		aa000000000000000000001b /* build */ = {
+			isa = PBXGroup;
+			children = (
+				aa000000000000000000001e /* xcode_settings */,
+			);
+			name = build;
+			sourceTree = "<group>";
+		};
+		aa000000000000000000001e /* xcode_settings */ = {
+			isa = PBXGroup;
+			children = (
+				aa0000000000000000000017 /* common.xcconfig */,
+				aa000000000000000000001c /* configuration */,
+				aa000000000000000000001d /* target */,
+			);
+			name = xcode_settings;
+			sourceTree = "<group>";
+		};
+		aa000000000000000000001c /* configuration */ = {
+			isa = PBXGroup;
+			children = (
+				aa0000000000000000000018 /* debug.xcconfig */,
+				aa0000000000000000000019 /* release.xcconfig */,
+			);
+			name = configuration;
+			sourceTree = "<group>";
+		};
+		aa000000000000000000001d /* target */ = {
+			isa = PBXGroup;
+			children = (
+				aa000000000000000000001a /* donkey.xcconfig */,
+			);
+			name = target;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		aa0000000000000000000005 /* donkey */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = aa000000000000000000000c /* build configuration list for PBXNativeTarget "donkey" */;
+			buildPhases = (
+				aa0000000000000000000006 /* sources */,
+				aa0000000000000000000007 /* frameworks */,
+				aa0000000000000000000008 /* resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			fileSystemSynchronizedGroups = (
+				aa000000000000000000000f /* base */,
+			);
+			name = donkey;
+			packageProductDependencies = (
+				aa0000000000000000000011 /* Martin */,
+				aa0000000000000000000015 /* DonkeyCore */,
+			);
+			productName = donkey;
+			productReference = aa0000000000000000000004 /* donkey.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		aa0000000000000000000001 /* project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 2600;
+				LastUpgradeCheck = 2600;
+				TargetAttributes = {
+					aa0000000000000000000005 = {
+						CreatedOnToolsVersion = 26.0;
+					};
+				};
+			};
+			buildConfigurationList = aa0000000000000000000009 /* build configuration list for PBXProject "donkey" */;
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = aa0000000000000000000002;
+			minimizedProjectReferenceProxies = 1;
+			packageReferences = (
+				aa0000000000000000000010 /* XCRemoteSwiftPackageReference "Martin" */,
+				aa0000000000000000000014 /* XCLocalSwiftPackageReference "DonkeyCore" */,
+			);
+			preferredProjectObjectVersion = 77;
+			productRefGroup = aa0000000000000000000003 /* products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				aa0000000000000000000005 /* donkey */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		aa0000000000000000000008 /* resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		aa0000000000000000000006 /* sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		aa000000000000000000000a /* debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = aa0000000000000000000018 /* debug.xcconfig */;
+			buildSettings = {
+			};
+			name = debug;
+		};
+		aa000000000000000000000b /* release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = aa0000000000000000000019 /* release.xcconfig */;
+			buildSettings = {
+			};
+			name = release;
+		};
+		aa000000000000000000000d /* debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = aa000000000000000000001a /* donkey.xcconfig */;
+			buildSettings = {
+			};
+			name = debug;
+		};
+		aa000000000000000000000e /* release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = aa000000000000000000001a /* donkey.xcconfig */;
+			buildSettings = {
+			};
+			name = release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		aa0000000000000000000009 /* build configuration list for PBXProject "donkey" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				aa000000000000000000000a /* debug */,
+				aa000000000000000000000b /* release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = release;
+		};
+		aa000000000000000000000c /* build configuration list for PBXNativeTarget "donkey" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				aa000000000000000000000d /* debug */,
+				aa000000000000000000000e /* release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCLocalSwiftPackageReference section */
+		aa0000000000000000000014 /* XCLocalSwiftPackageReference "DonkeyCore" */ = {
+			isa = XCLocalSwiftPackageReference;
+			relativePath = ../source/modules/DonkeyCore;
+		};
+/* End XCLocalSwiftPackageReference section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		aa0000000000000000000010 /* XCRemoteSwiftPackageReference "Martin" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/tigase/Martin.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 3.1.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		aa0000000000000000000011 /* Martin */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = aa0000000000000000000010 /* XCRemoteSwiftPackageReference "Martin" */;
+			productName = Martin;
+		};
+		aa0000000000000000000015 /* DonkeyCore */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = DonkeyCore;
+		};
+/* End XCSwiftPackageProductDependency section */
+	};
+	rootObject = aa0000000000000000000001 /* project object */;
+}
