@@ -5,47 +5,30 @@
 donkey exists because of https://adium.im/[adium], and is built out of adium's
 work. source files are imported from adium and adapted, and the architecture
 donkey is organized around — the separation of accounts, services, contacts,
-chats, and content objects — is adium's design, arrived at over more than a
-decade by its contributors.
+chats, and messages — is adium's design, arrived at over more than a decade by
+its contributors.
 
 adium is copyright 2001–2013 by the people listed in
-link:contributors.adoc[contributors.adoc], and is licensed under the gnu general
-public license, version 2 or, at the licensee's option, any later version. donkey
-exercises that option and is licensed under version 3 or later; see
-link:license[license].
+link:contributors.adoc[contributors.adoc]. donkey's own code is copyright 2026
+the donkey authors, listed there as well.
 
-where donkey incorporates or adapts adium source code, that code remains the
-copyright of its authors. imported files retain their original per file license
-headers and copyright notices.
+== affiliation
 
-donkey's own code is copyright 2026 the donkey authors, who are also listed in
-link:contributors.adoc[contributors.adoc].
+donkey is not affiliated with, endorsed by, or supported by the adium project,
+and does not use adium's name or artwork as its identity.
 
-== trademarks
+== outside works
 
-"adium" and the adium duck are marks of the adium project, referenced here only
-to describe donkey's origins. donkey is not affiliated with, endorsed by, or
-supported by the adium project, and uses no adium name or artwork as its own
-branding.
-
-== third-party components
-
-listed as they are added. licenses are taken from each project's own copying
-file as shipped in the resolved source, not from repository metadata.
+work from other projects that donkey uses as published.
 
 |===
-| component | license | used for
+| project | used for | notes
 
 | https://github.com/tigase/Martin[martin]
-| agpl-3.0
 | xmpp protocol implementation
+|
 
 | https://github.com/tigase/tigase-logging.swift[tigase-logging.swift]
-| agpl-3.0
-| logging. pulled in transitively by martin rather than chosen directly
+| logging
+| martin dependency
 |===
-
-both are agpl-3.0. section 13 of the gnu general public license version 3
-permits combining gplv3 work with agplv3 work, and the agpl terms continue to
-govern those components. exact resolved revisions are recorded in
-`donkey.xcodeproj/project.xcworkspace/xcshareddata/swiftpm/Package.resolved`.

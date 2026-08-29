@@ -1,0 +1,42 @@
+= architecture
+
+== layout
+
+[cols="1,3"]
+|===
+| directory | contents
+
+| `source`
+| source code
+
+| `project`
+| ide project files
+
+| `build`
+| build configuration
+
+| `documentation`
+| project documentation
+|===
+
+== source
+
+`source/base` contains the "main" application: what runs when donkey starts,
+and what connects the modules.
+
+`source/modules` contains the libraries donkey is built from.
+
+`base` uses the modules. no module uses `base`. everything compiles into one
+program.
+
+== build settings
+
+settings are in the xcconfig files, not in the xcode gui. settings changed in
+the gui are written into the project, where they take precedence over the
+xcconfig files and can potentially mask them.
+
+== objective-c naming
+
+adapted objective-c uses the `Donkey` class prefix. a module whose name ends in
+`ObjC` holds objective-c adapted from adium, paired with the swift module
+alongside it.

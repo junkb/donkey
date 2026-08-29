@@ -8,16 +8,27 @@ pre alpha. nothing works yet.
 
 == what this is
 
-adium was, and arguably still is, the best chat client macos ever had. it has been
-unmaintained for years: it crashes on current macos, and and binaries are
-x86_64, so it won't run when rosetta is removed.
+adium was, and arguably still is, the best chat client macos ever had. it has
+been unmaintained for years: it crashes unpredictably on current macos, and its
+binaries are x86_64, so it won't run when rosetta is removed.
 
-donkey is an attempt to carry forward what made adium good — its architecture, its
-message styles, the feel of using it — as something narrower and current:
+donkey is an attempt to carry forward what made adium good — its architecture,
+its message styles, the feel of using it — as something narrower and current:
 
 * xmpp only
 * arm64 native
 * modern apple frameworks
+
+== layout
+
+the repository layout, and the boundaries between its parts, are described in
+link:architecture.adoc[architecture.adoc].
+
+== privacy
+
+donkey connects only to the servers that have been configured, and collects
+nothing. what xmpp itself reveals, and what a server holds, are described in
+link:privacy.adoc[privacy.adoc].
 
 == lineage and licensing
 
