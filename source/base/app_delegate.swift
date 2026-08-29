@@ -18,19 +18,21 @@
 //
 
 import AppKit
+import DonkeyCore
 import Martin
 
-final class DonkeyAppDelegate: NSObject, NSApplicationDelegate {
+final class AppDelegate: NSObject, NSApplicationDelegate {
 
     private var main_window_controller: MainWindowController?
 
     func applicationDidFinishLaunching(_ notification: Notification) {
         install_main_menu()
 
-        // proves martin is linked and loadable in the app process. nothing is
-        // connected yet; tier 2 replaces this with a real service layer.
+        // %{public}@ because unified logging redacts dynamic values.
+        NSLog("donkey: %{public}@ linked", Identity.module_name)
         let client = XMPPClient()
-        NSLog("donkey: martin linked, xmppclient is %@", String(describing: type(of: client)))
+        NSLog("donkey: martin linked, xmppclient is %{public}@",
+              String(describing: type(of: client)))
 
         let controller = MainWindowController()
         controller.showWindow(self)
@@ -40,16 +42,15 @@ final class DonkeyAppDelegate: NSObject, NSApplicationDelegate {
     }
 
     func applicationShouldTerminateAfterLastWindowClosed(_ sender: NSApplication) -> Bool {
-        // a chat client should outlive its windows. this becomes false once
-        // there is a status item or dock badge to run behind.
+        // closing the last window quits, since the window is the only way to
+        // use the app.
         true
     }
 
     // MARK: - menu
 
-    /// built in code rather than loaded from a mainmenu nib. macos needs an
-    /// application menu before the first window appears, or standard key
-    /// equivalents — cmd-q, cmd-w — silently do nothing.
+    /// macos needs an application menu before the first window appears, or
+    /// standard key equivalents — cmd-q, cmd-w — silently do nothing.
     private func install_main_menu() {
         let name = "donkey"
         let main_menu = NSMenu()

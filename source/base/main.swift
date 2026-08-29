@@ -19,10 +19,9 @@
 
 import AppKit
 
-// explicit entry point rather than @main, so the launch sequence stays visible
-// with no attribute magic between here and the run loop.
+// spelled out rather than using @main, so the startup sequence is visible.
 let application = NSApplication.shared
-let app_delegate = DonkeyAppDelegate()
+let app_delegate = AppDelegate()
 application.delegate = app_delegate
 application.setActivationPolicy(.regular)
 application.run()
