@@ -1,0 +1,10 @@
+// donkey — settings for optimized builds.
+// licensed under gpl version 3 or later; see documentation/license.
+
+#include "../common.xcconfig"
+
+SWIFT_COMPILATION_MODE = wholemodule
+ENABLE_NS_ASSERTIONS = NO
+
+DEBUG_INFORMATION_FORMAT = dwarf-with-dsym
+MTL_ENABLE_DEBUG_INFO = NO

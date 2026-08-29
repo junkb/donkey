@@ -1,0 +1,26 @@
+// donkey — settings for the application target, shared by every
+// configuration. paths resolve against the xcode project's directory, which is
+// why they point outside project/ using `..`.
+// licensed under gpl version 3 or later; see documentation/license.
+
+// identity
+PRODUCT_NAME = $(TARGET_NAME)
+PRODUCT_BUNDLE_IDENTIFIER = net.dipswitch.donkey
+MARKETING_VERSION = 0.0.1
+CURRENT_PROJECT_VERSION = 1
+
+// bundle
+GENERATE_INFOPLIST_FILE = NO
+INFOPLIST_FILE = ../source/base/Info.plist
+COMBINE_HIDPI_IMAGES = YES
+LD_RUNPATH_SEARCH_PATHS = $(inherited) @executable_path/../Frameworks
+
+// swift
+SWIFT_VERSION = 5.0
+SWIFT_EMIT_LOC_STRINGS = YES
+
+// signing. ad hoc, so the app runs locally without a developer id. hardened
+// runtime needs a real signature to mean anything.
+CODE_SIGN_STYLE = Manual
+CODE_SIGN_IDENTITY = -
+ENABLE_HARDENED_RUNTIME = NO
