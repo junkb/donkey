@@ -1,0 +1,21 @@
+= privacy
+
+donkey connects only to the xmpp servers that have been configured. it collects
+nothing, reports nothing, and has no telemetry, analytics, crash reporting, or
+account with the project. the source is under the gpl, so these are claims which
+can be checked rather than taken on trust.
+
+== what xmpp reveals
+
+xmpp is federated, so a message passes through the sender's server and the
+recipient's server. both can see that a message was exchanged, when, and between
+whom, even when the body is encrypted end to end.
+
+a client also sends more than message text. presence, typing notifications,
+read receipts, idle time, and the client's name and version can all be sent, and
+each tells a contact or a server something about the person using it.
+
+== the server
+
+where a server archives messages so a second device can retrieve them, the
+operator holds a copy, readable unless it is encrypted end to end.

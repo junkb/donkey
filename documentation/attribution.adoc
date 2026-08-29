@@ -1,0 +1,34 @@
+= attribution
+
+== lineage
+
+donkey exists because of https://adium.im/[adium], and is built out of adium's
+work. source files are imported from adium and adapted, and the architecture
+donkey is organized around — the separation of accounts, services, contacts,
+chats, and messages — is adium's design, arrived at over more than a decade by
+its contributors.
+
+adium is copyright 2001–2013 by the people listed in
+link:contributors.adoc[contributors.adoc]. donkey's own code is copyright 2026
+the donkey authors, listed there as well.
+
+== affiliation
+
+donkey is not affiliated with, endorsed by, or supported by the adium project,
+and does not use adium's name or artwork as its identity.
+
+== outside works
+
+work from other projects that donkey uses as published.
+
+|===
+| project | used for | notes
+
+| https://github.com/tigase/Martin[martin]
+| xmpp protocol implementation
+|
+
+| https://github.com/tigase/tigase-logging.swift[tigase-logging.swift]
+| logging
+| martin dependency
+|===

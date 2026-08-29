@@ -5,9 +5,8 @@
 donkey is built out of the work of the following people, who hold copyright in
 adium, 2001–2013.
 
-reproduced from adium's `copyright.txt` as of its final release. if you
-contributed to adium and are not named here, you were absent from that file too —
-please open an issue to be added.
+reproduced from adium's `copyright.txt` as of its final release. corrections are
+welcome.
 
 [%hardbreaks]
 Thijs Alkemade

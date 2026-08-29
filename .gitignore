@@ -1,5 +1,5 @@
-# xcode build output and per-user project state
-build/
+# xcode build output and per user project state
+project/build/
 xcuserdata/
 
 # swift package manager

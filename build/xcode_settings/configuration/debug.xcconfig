@@ -1,0 +1,13 @@
+// donkey — settings for unoptimized, debuggable builds.
+// licensed under gpl version 3 or later; see documentation/license.
+
+#include "../common.xcconfig"
+
+GCC_OPTIMIZATION_LEVEL = 0
+SWIFT_OPTIMIZATION_LEVEL = -Onone
+
+GCC_PREPROCESSOR_DEFINITIONS = DEBUG=1 $(inherited)
+SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG $(inherited)
+
+ENABLE_TESTABILITY = YES
+MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE
